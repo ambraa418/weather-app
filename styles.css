@@ -1,0 +1,116 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #b3d9ff, #e6f7ff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Weather container styling */
+.weather-container {
+    background: #e6f1fc;
+    border: 2px solid #99ccff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Input and button styling */
+input, button {
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 10px;
+    border: 2px solid #99ccff;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+input {
+    width: 70%;
+}
+
+button {
+    background: #99ccff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #80b3ff;
+    transform: scale(1.05);
+}
+
+/* Weather result display */
+#weatherResult {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Weather Icon at the top */
+.weather-icon-container {
+    margin-bottom: 20px; /* Space between the icon and the rest of the information */
+}
+
+.weather-icon-container img {
+    max-width: 120px;
+    transition: all 0.3s ease;
+}
+
+/* Individual Weather Info Cards */
+.weather-card {
+    background: #ffffff;
+    border: 2px solid #99ccff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+/* Weather Card Content */
+.weather-card h3 {
+    color: #0073e6;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.weather-card p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+    input {
+        width: 60%;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    #weatherResult img {
+        max-width: 60px;
+    }
+
+    .weather-card {
+        width: 90%;
+    }
+}
